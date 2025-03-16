@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diogo Lopes - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .highlight {
+            color: #00c3ff;
+        }
+        a {
+            color: #00c3ff;
+            font-weight: bold;
+        }
+        .skill-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .skill-icon img {
+            width: 40px;
+            height: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="container text-center py-16">
+        <h1 class="text-6xl font-extrabold highlight">Diogo Lopes</h1>
+        <p class="text-xl mt-4">Software Developer | Cybersecurity Enthusiast</p>
+        <div class="mt-6 flex justify-center gap-4">
+            <a href="https://github.com/xDiogow" target="_blank" class="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-6 h-6">GitHub</a>
+            <a href="mailto:diogomiguelgl@gmail.com" class="flex items-center gap-2 px-6 py-3 bg-gray-700 text-white rounded-lg flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Contact" class="w-6 h-6">Contact</a>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container text-center py-12">
+        <h2 class="text-3xl font-semibold border-b-4 border-blue-500 pb-2">🧑‍💻 About Me</h2>
+        <p class="mt-4 text-lg">I'm a passionate software developer with a strong focus on cybersecurity and backend development. I enjoy building scalable applications, working with databases, and securing digital infrastructures. My expertise includes Python, C#, and automation, with a deep interest in ethical hacking and security analysis.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="container text-center py-12">
+        <h2 class="text-3xl font-semibold border-b-4 border-blue-500 pb-2">💻 Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-10 h-10">Python</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="w-10 h-10">C#</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="w-10 h-10">C</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" class="w-10 h-10">Bash</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Cybersecurity" class="w-10 h-10">Cybersecurity</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-10 h-10">MySQL</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-10 h-10">MongoDB</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" alt="Elasticsearch" class="w-10 h-10">Elasticsearch</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-10 h-10">Docker</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-10 h-10">Git</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="w-10 h-10">Flask</div>
+            <div class="card skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="API Development" class="w-10 h-10">API Development</div>
+        </div>
+    </div>
+
+    <!-- Project Section -->
+    <div class="container text-center py-12">
+        <h2 class="text-3xl font-semibold border-b-4 border-blue-500 pb-2">🚀 Featured Project</h2>
+        <div class="mt-6 p-6 rounded-xl shadow-md card text-left">
+            <h3 class="text-2xl font-semibold highlight">DataSpecter</h3>
+            <p class="mt-4">💾 DataSpecter is a cybersecurity-focused platform designed to help individuals and businesses protect their data from cyber threats. It provides a comprehensive set of tools for tracking data breaches, monitoring leaked credentials, and securing personal information.</p>
+            <p class="mt-4">By leveraging advanced algorithms and dark web analysis, DataSpecter enables users to:</p>
+            <ul class="list-disc ml-6 mt-4">
+                <li>🔎 Identify if personal data has been compromised in breaches.</li>
+                <li>⚠️ Receive real-time alerts for leaked credentials.</li>
+                <li>🕵️ Detect and analyze potential threats from dark web sources.</li>
+                <li>🔐 Strengthen online security through cybersecurity best practices.</li>
+            </ul>
+            <a href="https://github.com/xDiogow/DataSpecter" target="_blank" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg">View Project</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-500">
+        © 2025 Diogo Lopes | All Rights Reserved
+    </footer>
+</body>
+</html>
